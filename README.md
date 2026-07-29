@@ -1,8 +1,7 @@
 # Traffic Optimization in Kobe Using Deep Q-Network (DQN)
 
 <p align="center">
-    <<img width="624" height="452" alt="image" src="https://github.com/user-attachments/assets/fe8898be-38d3-4907-bb4a-91d373e1e550" />
->
+    <img width="624" height="452" alt="image" src="https://github.com/user-attachments/assets/fe8898be-38d3-4907-bb4a-91d373e1e550" />
 </p>
 
 ## 概要
