@@ -311,26 +311,49 @@ DQNでは以下のパラメータを自動探索します。
 
 ---
 
-# 実験結果
+## 実験結果
 
-各制御手法について
+本研究では、**Fixed-Time（Baseline）**、**Self-Organizing Traffic Lights（SOTL）**、**Max Pressure**、および **Deep Q-Network（DQN）** の4種類の交通信号制御手法を、同一の交通環境および実交通データを用いて比較しました。
 
-- Baseline
-- SOTL
-- Max Pressure
-- DQN
+### Average Halting Vehicles
 
-を比較し、
+<p align="center">
+    <img width="2400" height="1500" alt="01_halting_comparison" src="https://github.com/user-attachments/assets/0075cb41-7a7c-4559-bf06-ff63c7636e83" />
+</p>
 
-- 学習曲線
-- EMTD
-- Waiting Time
-- Traffic Density
-- Throughput
-
-などを自動でグラフ化できます。
+停止車両数の比較では、DQNが4つの制御手法の中で最も少ない停止車両数を記録しました。これは、信号制御を動的に最適化することで、交差点での車両滞留を効果的に抑制できたことを示しています。
 
 ---
+
+### Average Waiting Time
+
+<p align="center">
+    <img width="2400" height="1500" alt="02_waiting_time_comparison" src="https://github.com/user-attachments/assets/099d7674-7971-4324-95a6-1acd8d6c050e" />
+</p>
+
+平均待ち時間についても、DQNは他の制御手法より短い待ち時間を達成しました。特に、Fixed-Time、SOTL、および Max Pressure と比較して待機時間が減少しており、交通流の改善が確認できます。
+
+---
+
+### Traffic Density
+
+<p align="center">
+    <img width="2400" height="1500" alt="04_density_comparison" src="https://github.com/user-attachments/assets/86665247-4160-4641-a696-81840e276b26" />
+</p>
+
+交通密度の比較では、DQNが最も低い密度を維持しました。これは、交差点周辺の混雑を緩和し、より円滑な交通流を実現できたことを示しています。
+
+---
+
+### 結果のまとめ
+
+今回の実験では、DQNは比較対象である Fixed-Time、SOTL、および Max Pressure と比較して、
+
+- 停止車両数（Average Halting Vehicles）の削減
+- 平均待ち時間（Average Waiting Time）の短縮
+- 交通密度（Traffic Density）の低減
+
+を達成し、本研究で評価した4つの制御手法の中で最も優れた交通制御性能を示しました。
 
 # 今後の課題
 
