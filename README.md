@@ -1,5 +1,10 @@
 # Traffic Optimization in Kobe Using Deep Q-Network (DQN)
 
+<p align="center">
+    <<img width="624" height="452" alt="image" src="https://github.com/user-attachments/assets/fe8898be-38d3-4907-bb4a-91d373e1e550" />
+>
+</p>
+
 ## 概要
 
 本プロジェクトは、**神戸市須磨区の実交通データ**を利用し、SUMO（Simulation of Urban MObility）上で交通流を再現し、**Deep Q-Network（DQN）**による信号制御最適化を行う研究プロジェクトです。
@@ -275,17 +280,3 @@ DQNでは以下のパラメータを自動探索します。
 
 ---
 
-# ライセンス
-
-本プロジェクトは研究・教育目的で公開しています。
-
----
-
-# 作者
-
-**Noah Larson**
-
-立命館大学 情報理工学部
-
-GitHub:
-https://github.com/NoahLarson05
